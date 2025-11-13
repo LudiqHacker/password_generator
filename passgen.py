@@ -6,7 +6,7 @@ import string
 def generate_password():
     chars = string.ascii_letters + string.digits + string.punctuation
     global password
-    password = "".join(random.choice(chars) for i in range(10))
+    password = "".join(random.choice(chars) for i in range(16))
     label1.config(text=f"Password: {password}", font=("Sans", 24), bg="lightblue")
     label2.config(text="", bg="#d9d9d9")
     btn_copy.config(text="Click to copy the password")
