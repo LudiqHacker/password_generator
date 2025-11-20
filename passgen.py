@@ -10,7 +10,6 @@ def generate_password():
     label1.config(text=f"Password: {password}", font=("Sans", 24), bg="lightblue")
     label2.config(text="", bg="#d9d9d9")
     btn_copy.config(text="Click to copy the password")
-    return password
 
 def press_to_copy():
     try:
